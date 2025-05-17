@@ -3,34 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Sudoku Game App - Play classic Sudoku puzzles on your phone.">
-  <title>Sudoku App</title>
+  <meta name="description" content="Sudoku Game - A clean Flutter-based Sudoku puzzle app." />
+  <title>Sudoku Game App</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      line-height: 1.6;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
     }
+
     h1 {
       color: #2c3e50;
     }
-    img {
-      max-width: 200px;
+
+    .icon {
+      width: 120px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>Sudoku - Classic Puzzle App</h1>
-  <img src="assets/icon/icon.jpg" alt="Sudoku App Icon"/>
-  <p><strong>Description:</strong> This is a clean, classic Sudoku app built with Flutter.</p>
-  <p><strong>Features:</strong></p>
+  <h1>🧩 Sudoku Game</h1>
+  <img src="assets/icon/icon.jpg" alt="Sudoku App Icon" class="icon" />
+
+  <p><strong>Platform:</strong> Flutter (Dart)</p>
+
+  <p>
+    This Sudoku Game is a Flutter-based puzzle application where users can:
+  </p>
+
   <ul>
-    <li>Easy, Medium, and Hard levels</li>
-    <li>Hints and notes</li>
-    <li>Timer and statistics tracking</li>
+    <li>Play Sudoku on three levels of difficulty</li>
+    <li>Use hints to help solve tough puzzles</li>
+    <li>Undo their last move</li>
+    <li>View the correct solution anytime</li>
+    <li>Start a new game instantly</li>
   </ul>
-  <p><strong>Contact:</strong> example@email.com</p>
+
+  <p><strong>Features Used in App Code:</strong></p>
+  <ul>
+    <li>Custom GridView-based UI</li>
+    <li>Flutter Material Components</li>
+    <li>Random board generation with solution</li>
+    <li>State management using StatefulWidgets</li>
+  </ul>
+
+  <p><strong>Developer:</strong> Your Name</p>
+  <p><strong>Contact:</strong> your.email@example.com</p>
+
+  <a class="button" href="https://github.com/svc666/sudoku" target="_blank">View Code on GitHub</a>
 </body>
 </html>
